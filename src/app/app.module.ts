@@ -16,6 +16,8 @@ import { LoginComponent } from './login/login.component';
 import { AppFooterComponent } from './app-footer/app-footer.component';
 
 import { AuthService } from './_services/auth/auth.service';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { TokenInterceptor } from './_intercetors/token-interceptor';
 
 
 @NgModule({
@@ -36,7 +38,12 @@ import { AuthService } from './_services/auth/auth.service';
     MaterialModule
   ],
   providers: [
-    AuthService
+    AuthService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptor,
+      multi: true
+    }
   ],
 
   bootstrap: [AppComponent]
