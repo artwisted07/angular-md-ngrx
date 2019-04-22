@@ -1,0 +1,30 @@
+.app-footer{
+
+  width:100%;
+  background-color: #112a4d;
+
+
+
+}
+
+.footerLogo {
+  padding: 1em;
+  max-width:100px;
+  margin: 0 auto;
+}
+
+
+.legal {
+  text-align: center;
+  color:#ccc;
+  font-size: .8em;
+  padding: .5em 1em;
+}
+
+
+@media (min-width: 992px) {
+  .legal {
+    text-align: right;
+  }
+
+}

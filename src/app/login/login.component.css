@@ -1,0 +1,33 @@
+
+.loginWrapper {
+  width:100%;
+  height: 100vh;
+  overflow-y: auto;
+
+}
+
+.loginFormWrapper {
+padding: 1em;
+}
+
+.loginLeft {
+  background: url('http://www.howcogroup.com/images/home-slider/home-slide-1.jpg') top left no-repeat;
+  background-size: cover;
+}
+
+.background{
+  background: url('http://www.howcogroup.com/images/home-slider/home-slide-1.jpg') top center no-repeat;
+  background-size: cover;
+}
+
+
+@media (min-width: 992px) {
+
+  .loginForm{
+    min-width: 500px;
+  }
+
+ }
+
+
+

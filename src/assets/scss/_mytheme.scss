@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+
+
+
+@include mat-core();
+
+$md-howcoblue: (
+  50 : #e2e5ea,
+  100 : #b8bfca,
+  200 : #8895a6,
+  300 : #586a82,
+  400 : #354a68,
+  500 : #112a4d,
+  600 : #0f2546,
+  700 : #0c1f3d,
+  800 : #0a1934,
+  900 : #050f25,
+  A100 : #6184ff,
+  A200 : #2e5cff,
+  A400 : #0037fa,
+  A700 : #0032e1,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #ffffff,
+      400 : #ffffff,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #ffffff,
+      A400 : #ffffff,
+      A700 : #ffffff,
+  )
+);
+
+
+
+$my-theme-primary: mat-palette($md-howcoblue, 500);
+$my-theme-accent: mat-palette($md-howcoblue, 300);
+$my-theme_warn: mat-palette($mat-red);
+
+
+$theme: mat-light-theme($my-theme-primary, $my-theme-accent, $my-theme_warn);
+
+
+@include angular-material-theme($theme);
+
+// @include mat-input-theme($theme);
+// @include mat-checkbox-theme($theme);
+// @include mat-form-field-theme($theme);
+// @include mat-select-theme($theme);
+
